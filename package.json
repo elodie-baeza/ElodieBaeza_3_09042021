@@ -1,7 +1,7 @@
 {
   "name": "p3",
   "version": "1.0.0",
-  "description": "",
+  "description": "ohmyfood",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
@@ -9,5 +9,5 @@
   },
   "author": "",
   "license": "ISC",
-  "browserslist": "last 4 versions",
+  "browserslist": "last 4 versions"
 }
