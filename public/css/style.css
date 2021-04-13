@@ -144,7 +144,7 @@ a {
   position: relative;
   z-index: 1;
   top: 2.5rem;
-  left: 62vw;
+  left: 70%;
   background: #99E2D0;
   color: #008766;
   padding: 0.5rem;
@@ -164,30 +164,27 @@ a {
 }
 .card__tags {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: right;
+  justify-content: space-between;
+  align-content: center;
   background: white;
-  padding: 0.5rem 0 0 1rem;
+  padding: 0.5rem 0 1rem 1rem;
   border-radius: 0 0 1rem 1rem;
 }
 .card__tags__name {
   width: 100%;
   font-size: 1.2rem;
-  padding-bottom: 0;
   color: black;
 }
 .card__tags__city {
-  width: 100%;
-  color: black;
+  padding-top: 0.2rem;
 }
 .card__tags .fa::before {
   font-size: 2rem;
-  background: linear-gradient(45deg, #FF79DA, #9356dc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: white;
+  color: black;
 }
 .card__tags__icon {
-  padding: 1rem;
+  padding-right: 1rem;
 }
 
 .footer {
