@@ -11,43 +11,46 @@
     <title>Ohmyfood!</title>
 </head>
 <body>
-    <header>
-        <p class="logo"> ohmyfood </p>
-        <div class="cityBar">
+    <header class="header">
+        <p class="header__logo"> ohmyfood </p>
+        <div class="header__location">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
             <strong>Paris, Belleville</strong>
         </div>
-        <div class="part">
-            <h2><strong>Réservez le menu qui vous convient</strong></h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button class="btn"> Explorer nos restaurants </button>
-        </div>
     </header>
+
+    <section class="presentation">
+        <h2><strong>Réservez le menu qui vous convient</strong></h2>
+        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <button class="presentation__btn"> Explorer nos restaurants </button>
+    </section>
+
     <main>
-        <nav class="part">
-            <header class="part__title">
+        <nav class="container">
+            <header class="container__header">
                 <h1>Fonctionnement</h1>
             </header>
-            <ul class="step">
-                <li class="step__nbr">
-                    <p>1</p>
-                    <i id="restaurant" class="fa fa-mobile" aria-hidden="true"></i>
+            <ol>
+                <li class="step step--active">
+                    <p class="step__nbr">1</p>
+                    <i class="fa fa-mobile step__icon" aria-hidden="true"></i>
                     <strong class="step__title"> Choisissez un restaurant </strong>
                 </li>
-                <li class="step__nbr">
-                    <p>2</p>
-                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                <li class="step step--active">
+                    <p class="step__nbr">2</p>
+                    <i class="fa fa-list-ul step__icon" aria-hidden="true"></i>
                     <strong class="step__title"> Composez votre menu </strong>
                 </li>
-                <li class="step__nbr">
-                    <p>3</p>
-                    <i class="fa fa-store" aria-hidden="true"></i>
+                <li class="step step--active">
+                    <p class="step__nbr">3</p>
+                    <i class="fa fa-store step__icon" aria-hidden="true"></i>
                     <strong class="step__title"> Dégustez au restaurant </strong>
                 </li>
-            </ul>
+            </ol>
         </nav>
-        <section>
-            <header class="title"> 
+        
+        <section class="container container--grey">
+            <header class="container__header"> 
                 <h2> Restaurants </h2>
             </header>
             <a href="#">
@@ -96,32 +99,34 @@
             </a>
         </section>
     </main>
-    <footer>
-        <header>
-            <p class="logo">ohmyfood</p>
+
+    <footer class="footer">
+        <header class="footer__header">
+            <p>ohmyfood</p>
         </header>
-        <nav class="list">
+        <nav>
             <ul>
-                <li class="list__item">
+                <li class="footer__list">
                     <label for="#restaurant">
-                        <i class="fa fa-cutlery" aria-hidden="true"></i>
+                        <i class="fa fa-cutlery footer__list__icon" aria-hidden="true"></i>
                     </label>
                     <a href="#"> Proposer un restaurant </a>
                 </li>
-                <li class="list__item">
+                <li class="footer__list">
                     <label for="partenaire">
-                        <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                        <i class="fa fa-handshake-o footer__list__icon" aria-hidden="true"></i>
                     </label>
                     <a href="#"> Devenir partenaire </a>
                 </li>
-                <li class="list__item">
+                <li class="footer__list">
                     <a href="#"> Mentions légales </a>
                 </li>
-                <li class="list__item">
+                <li class="footer__list">
                     <a href="mailto:ohmyfood@example.com"> Contact </a>
                 </li>
             </ul>
         </nav>
     </footer>
+    
 </body>
 </html>

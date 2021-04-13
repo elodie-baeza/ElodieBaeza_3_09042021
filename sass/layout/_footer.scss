@@ -1,22 +1,23 @@
-footer{
+.footer{
     padding-top: 1rem;
     padding-bottom: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    background: rgb(48, 48, 48);
-    .logo{
+    background: #353535;
+    &__header{
         font-size: 1.3rem;
         padding-bottom: 1rem;
         color: white;
     }
-    li{
+    &__list{
         font-size: 1.1rem;
         padding-bottom: 0.7rem;
-    }
-    a, i{
+            &__icon{
+                width: 2rem;
+                color: white;
+            }
+        }
+    a {
         color: white;
-    }
-    i{
-        width: 2rem;
     }
 }

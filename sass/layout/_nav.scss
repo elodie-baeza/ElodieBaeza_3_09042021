@@ -1,14 +1,19 @@
-main nav{
-    @include part;
-    ul{
+.container{
+    @include container;
+    ol{
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-end;    
+        justify-content: flex-end;
     }
-    header.part__title{
-        @include title;
+    &__header{
+        @include container__header;
     }
-    li.step__nbr{
-        @include step__nbr;
-    }
+}
+
+.step{
+    @include step;
+}
+
+.step--active{
+    @include step--active;
 }
