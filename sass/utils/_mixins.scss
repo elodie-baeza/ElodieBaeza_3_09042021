@@ -6,3 +6,40 @@
     color: $colour-white;
     background: linear-gradient($colour-secondary, $colour-primary);
 }
+
+@mixin title {
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+@mixin part{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@mixin step__nbr {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    padding: 1.75rem;
+    background: $colour-light-grey;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    border-radius: 2rem;
+    box-shadow: 2px 5px 10px lighten(grey, 20%);
+        p{
+            color: white;
+            background: $colour-primary;
+            padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+            border-radius: 2rem;
+            position: relative;
+            right: 3rem;
+        }
+        i{
+            color: grey;
+            padding-right: 1.8rem;
+            font-size: 1.5rem;
+        }
+}

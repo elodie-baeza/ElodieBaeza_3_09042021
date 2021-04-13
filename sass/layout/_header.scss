@@ -14,20 +14,19 @@ body>header {
                     margin-right: 1rem;
                 }
         }
-        .tags{
+        .part{
+            @include part;
             background: whitesmoke;
-            padding-top: 3rem;
-                h2{
-                    font-size: 1.8rem;
-                    margin: 0 5rem 0 5rem;
-                }
-                p{
-                    font-size: 1.4rem;
-                    padding: 1rem 1rem 2rem 1rem;
-                }
-                button.btn{
-                    @include btn;
-                    margin-bottom: 5rem;
-                }
+            h2{
+                font-size: 1.8rem;
+                margin: 0 5rem 0 5rem;
+            }
+            p{
+                font-size: 1.4rem;
+                padding: 1rem 1rem 2rem 1rem;
+            }
+            button.btn{
+                @include btn;
+            }
         }
 }

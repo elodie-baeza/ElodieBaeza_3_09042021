@@ -15,9 +15,8 @@ ul li {
   list-style-type: none;
 }
 
-img {
-  object-fit: cover;
-  width: 100%;
+a {
+  text-decoration: none;
 }
 
 .logo {
@@ -45,26 +44,122 @@ body > header .cityBar {
 body > header .cityBar i {
   margin-right: 1rem;
 }
-body > header .tags {
-  background: whitesmoke;
+body > header .part {
   padding-top: 3rem;
+  padding-bottom: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background: whitesmoke;
 }
-body > header .tags h2 {
+body > header .part h2 {
   font-size: 1.8rem;
   margin: 0 5rem 0 5rem;
 }
-body > header .tags p {
+body > header .part p {
   font-size: 1.4rem;
   padding: 1rem 1rem 2rem 1rem;
 }
-body > header .tags button.btn {
+body > header .part button.btn {
   font-size: 1.25rem;
   padding: 1.2rem 1.5rem 1.2rem 1.5rem;
   border: none;
   border-radius: 3rem;
   color: #fff;
   background: linear-gradient(#FF79DA, #9356DC);
-  margin-bottom: 5rem;
+}
+
+main nav {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+main nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+main nav header.part__title {
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+main nav li.step__nbr {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  padding: 1.75rem;
+  background: #f3f3f3;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  border-radius: 2rem;
+  box-shadow: 2px 5px 10px #b3b3b3;
+}
+main nav li.step__nbr p {
+  color: white;
+  background: #9356DC;
+  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  border-radius: 2rem;
+  position: relative;
+  right: 3rem;
+}
+main nav li.step__nbr i {
+  color: grey;
+  padding-right: 1.8rem;
+  font-size: 1.5rem;
+}
+
+section {
+  background: #f3f3f3;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+section .title {
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+  box-shadow: 0.1rem 0.1rem 1rem silver;
+  border-radius: 1rem;
+}
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 10rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.card figcaption {
+  background: white;
+  padding: 0.5rem 0 0 1rem;
+  position: relative;
+  bottom: 0;
+  border-radius: 0 0 1rem 1rem;
+}
+
+footer {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background: #303030;
+}
+footer .logo {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+footer li {
+  font-size: 1.1rem;
+  padding-bottom: 0.7rem;
+}
+footer a, footer i {
+  color: white;
+}
+footer i {
+  width: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

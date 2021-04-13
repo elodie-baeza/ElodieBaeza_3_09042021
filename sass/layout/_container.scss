@@ -1,0 +1,7 @@
+section {
+    background: $colour-light-grey;
+    @include part;
+    .title{
+        @include title;
+    }
+}

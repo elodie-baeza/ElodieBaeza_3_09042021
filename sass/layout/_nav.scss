@@ -1,0 +1,14 @@
+main nav{
+    @include part;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;    
+    }
+    header.part__title{
+        @include title;
+    }
+    li.step__nbr{
+        @include step__nbr;
+    }
+}
