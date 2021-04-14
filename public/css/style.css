@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-.header__logo {
+.header__logo, .footer__header {
   font-family: "shrikhand", cursive;
 }
 
@@ -61,7 +61,7 @@ a {
   justify-content: flex-end;
 }
 .container__header {
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding-bottom: 2rem;
 }
 
@@ -136,7 +136,7 @@ a {
   background: #f6f6f6;
 }
 .container__header {
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding-bottom: 2rem;
 }
 
