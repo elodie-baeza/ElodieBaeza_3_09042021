@@ -1,24 +1,21 @@
-.presentation{
+.brief-outline{
     width: 100%;
     text-align: center;
     @include container;
     background: #f6f6f6;
-    h2{
-        font-size: 1.8rem;
-        padding: 0 1rem 0 1rem;
-    }
-    p{
-        font-size: 1rem;
-        padding: 1rem 0rem 2rem 0rem;
-    }
-    &__btn{
-        @include presentation__btn;
-    }
+        h2{
+            font-size: 1.8rem;
+            padding: 0 1rem 0 1rem;
+        }
+        p{
+            font-size: 1rem;
+            padding: 1rem 0rem 2rem 0rem;
+        }
 }
 
-.container {
+.guide, .book {
     @include container;
-        &__header{
-            @include container__header;
+        &__title{
+            @include container__title;
         }
 }

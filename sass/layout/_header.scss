@@ -1,11 +1,11 @@
-.header {
+header {
     width: 100%;
     text-align: center;
-        &__logo{
+        .header__brand-name{
             font-size: 2rem;
             padding: 1rem 0 0.2rem 0;
         }
-        &__location{
+        .header__location{
             background: lighten(grey, 42%);
             background: #eaeaea;
             padding: 1rem 0 1rem 0;

@@ -1,13 +1,3 @@
-.new{
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    background: $colour-tertiary;
-    color: $colour-tertiary-dark;
-    padding: 0.5rem;
-    border-radius: 0.2rem;
-}
-
 // .fa::active {
 //     font-size: 2rem;
 //     background: linear-gradient(45deg, $colour-secondary, $colour-primary);
@@ -16,32 +6,39 @@
 // }                
 
 .card{
-    // display: flex;
-    margin-bottom: 1.5rem;
-    box-shadow: 0.1rem 0.1rem 1rem lighten(grey, 25%);
-    border-radius: 1rem;
-        &--new{
-            position: relative;
+    @include card;
+        &__tag{
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            background: $colour-tertiary;
+            color: $colour-tertiary-dark;
+            padding: 0.5rem;
+            border-radius: 0.2rem;
         }
+        // &--new{
+        //     @include card;
+        //     position: relative;
+        // }
         &__picture{
             object-fit: cover;
             width: 100%;
             height: 10rem;
             border-radius: 1rem 1rem 0 0;
         }
-        &__tags{
+        figcaption{
             display: flex;
             justify-content: space-between;
             align-content: center;
             background: white;
             padding: 0.5rem 0 1rem 1rem;
             border-radius: 0 0 1rem 1rem;
-                &__name{
+                .card__title{
                     width: 100%;
                     font-size: 1.2rem;
                     color: black;
                 }
-                &__city{
+                .card__city{
                     padding-top: 0.2rem;
                 }
                 .fa::before {
@@ -49,7 +46,7 @@
                     background: white;
                     color: black;
                 }                
-                &__icon{
+                .card__icon{
                     padding-right: 1rem;
                 }
 

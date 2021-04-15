@@ -1,19 +1,18 @@
-.container{
+.guide{
     @include container;
     ol{
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
     }
-    &__header{
-        @include container__header;
+    &__title{
+        @include container__title;
     }
 }
 
 .step{
     @include step;
-}
-
-.step--active{
-    @include step--active;
+        &:hover{
+            @include step--active;
+        }
 }

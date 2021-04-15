@@ -11,128 +11,131 @@
     <title>Ohmyfood!</title>
 </head>
 <body>
-    <header class="header">
-        <p class="header__logo"> ohmyfood </p>
+    <header>
+        <p class="header__brand-name">ohmyfood</p>
         <div class="header__location">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
             <strong>Paris, Belleville</strong>
         </div>
     </header>
     
-    <section class="presentation">
+    <section class="brief-outline">
         <h2><strong>Réservez le menu qui vous convient</strong></h2>
         <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button class="presentation__btn"> Explorer nos restaurants </button>
+        <button class="btn"> Explorer nos restaurants </button>
     </section>
     
     <main>
-        <nav class="container">
-            <h1 class="container__header">Fonctionnement</h1>
+        <nav class="guide">
+            <h1 class="guide__title">Fonctionnement</h1>
             <ol>
-                <li class="step step--active">
+                <li class="step">
                     <p class="step__nbr">1</p>
                     <i class="fa fa-mobile step__icon" aria-hidden="true"></i>
-                    <strong class="step__title"> Choisissez un restaurant </strong>
+                    <strong class="step__description"> Choisissez un restaurant </strong>
                 </li>
-                <li class="step step--active">
+                <li class="step">
                     <p class="step__nbr">2</p>
                     <i class="fa fa-list-ul step__icon" aria-hidden="true"></i>
-                    <strong class="step__title"> Composez votre menu </strong>
+                    <strong class="step__description"> Composez votre menu </strong>
                 </li>
-                <li class="step step--active">
+                <li class="step">
                     <p class="step__nbr">3</p>
                     <i class="fa fa-store step__icon" aria-hidden="true"></i>
-                    <strong class="step__title"> Dégustez au restaurant </strong>
+                    <strong class="step__description"> Dégustez au restaurant </strong>
                 </li>
             </ol>
         </nav>
         
-        <section class="container container--grey">
-            <h2 class="container__header"> Restaurants </h2>
+        <section class="book">
+            <h2 class="book__title"> Restaurants </h2>
 
-            <figure class="card card--new">
+            <figure class="card">
                 <a href="#">
-                    <span class="new"><strong>Nouveau</strong></span>
-                    <img class="card__picture" src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"></a>
-                    <figcaption class="card__tags">
-                        <div>
-                            <strong class="card__tags__name">La palette du goût</strong>
-                            <p class="card__tags__city">Ménilmontant</p>
-                        </div>
-                        <div class="card__tags__icon">
-                            <i class="far fa-heart fa-2x card__tags__icon--default" aria-hidden="true"></i>
-                            <i class="fas fa-heart fa-2x card__tags__icon--active" aria-hidden="true"></i>
-                        </div>
-                    </figcaption>
+                    <span class="card_tag"><strong>Nouveau</strong></span>
+                    <img class="card__picture" src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                </a>
+                <figcaption>
+                    <div>
+                        <strong class="card__title">La palette du goût</strong>
+                        <p class="card__city">Ménilmontant</p>
+                    </div>
+                    <div class="card__bookmark">
+                        <i class="far fa-heart fa-2x card__bookmark" aria-hidden="true"></i>
+                        <i class="fas fa-heart fa-2x card__bookmark--active" aria-hidden="true"></i>
+                    </div>
+                </figcaption>
             </figure>
 
-            <figure class="card card--new">
-                <span class="new"><strong>Nouveau</strong></span>
-                <a href="#"><img class="card__picture" src="./public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"></a>
-                <figcaption class="card__tags">
+            <figure class="card">
+                <a href="#">
+                    <span class="card_tag"><strong>Nouveau</strong></span>
+                    <img class="card__picture" src="./public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                </a>
+                <figcaption>
                     <div>
-                        <strong class="card__tags__name">La note enchantée</strong>
-                        <p class="card__tags__city">Charonne</p>
+                        <strong class="card__title">La note enchantée</strong>
+                        <p class="card__city">Charonne</p>
                     </div>
-                    <div class="card__tags__icon">
-                        <i class="far fa-heart fa-2x card__tags__icon--default" aria-hidden="true"></i>
-                        <i class="fas fa-heart fa-2x card__tags__icon--active" aria-hidden="true"></i>
+                    <div>
+                        <i class="far fa-heart fa-2x card__bookmark" aria-hidden="true"></i>
+                        <i class="fas fa-heart fa-2x card__bookmark--active" aria-hidden="true"></i>
                     </div>
                 </figcaption>
             </figure>
             
             <figure class="card">
-                <span class="new"><strong>Nouveau</strong></span>
-                <a href="#"><img class="card__picture" src="./public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française"></a>
-                <figcaption class="card__tags">
+                <a href="#">
+                    <img class="card__picture" src="./public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
+                </a>
+                <figcaption>
                     <div>
-                        <strong class="card__tags__name">A la française</strong>
-                        <p class="card__tags__city">Cité rouge</p>
+                        <strong class="card__title">A la française</strong>
+                        <p class="card__city">Cité rouge</p>
                     </div>
-                    <div class="card__tags__icon">
-                        <i class="far fa-heart fa-2x card__tags__icon--default" aria-hidden="true"></i>
-                        <i class="fas fa-heart fa-2x card__tags__icon--active" aria-hidden="true"></i>
+                    <div>
+                        <i class="far fa-heart fa-2x card__bookmark" aria-hidden="true"></i>
+                        <i class="fas fa-heart fa-2x card__bookmark--active" aria-hidden="true"></i>
                     </div>
                 </figcaption>
             </figure>
             
             <figure class="card">
-                <span class="new"><strong>Nouveau</strong></span>
-                <a href="#"><img class="card__picture" src="./public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"></a>
-                    <figcaption class="card__tags">
-                        <div>
-                            <strong class="card__tags__name">Le délice des sens</strong>
-                            <p class="card__tags__city">Folie-Méricourt</p>
-                        </div>
-                        <div class="card__tags__icon">
-                            <i class="far fa-heart fa-2x card__tags__icon--default" aria-hidden="true"></i>
-                            <i class="fas fa-heart fa-2x card__tags__icon--active" aria-hidden="true"></i>
-                        </div>
-                    </figcaption>
+                <a href="#">
+                    <img class="card__picture" src="./public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                </a>
+                <figcaption>
+                    <div>
+                        <strong class="card__title">Le délice des sens</strong>
+                        <p class="card__tags__city">Folie-Méricourt</p>
+                    </div>
+                    <div>
+                        <i class="far fa-heart fa-2x card__bookmark" aria-hidden="true"></i>
+                        <i class="fas fa-heart fa-2x card__bookmark--active" aria-hidden="true"></i>
+                    </div>
+                </figcaption>
             </figure>
         </section>
     </main>
             
-    <footer class="footer">
-        <p class="footer__header">ohmyfood</p>
-        <nav>
-            <ul>
-                <li class="footer__list">
-                    <i class="fa fa-cutlery footer__list__icon" aria-hidden="true"></i>
+    <footer>
+        <p class="footer__title">ohmyfood</p>
+            <ul class="list-items">
+                <li class="list-items__item">
+                    <i class="fa fa-cutlery" aria-hidden="true"></i>
                     <a href="#"> Proposer un restaurant </a>
                 </li>
-                <li class="footer__list">
-                    <i class="fa fa-handshake-o footer__list__icon" aria-hidden="true"></i>
+                <li class="list-items__item">
+                    <i class="fa fa-handshake-o" aria-hidden="true"></i>
                     <a href="#"> Devenir partenaire </a>
                 </li>
-                <li class="footer__list">
+                <li class="list-items__item">
                     <a href="#"> Mentions légales </a>
                 </li>
-                <li class="footer__list">
+                <li class="list-items__item">
                     <a href="mailto:ohmyfood@example.com"> Contact </a>
                 </li>
             </ul>
-        </nav>
     </footer>
             
 </body>
