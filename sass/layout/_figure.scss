@@ -1,8 +1,7 @@
 .new{
-    position: relative;
-    z-index: 1;
-    top: 2.5rem;
-    left: 70%;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
     background: $colour-tertiary;
     color: $colour-tertiary-dark;
     padding: 0.5rem;
@@ -21,6 +20,9 @@
     margin-bottom: 1.5rem;
     box-shadow: 0.1rem 0.1rem 1rem lighten(grey, 25%);
     border-radius: 1rem;
+        &--new{
+            position: relative;
+        }
         &__picture{
             object-fit: cover;
             width: 100%;

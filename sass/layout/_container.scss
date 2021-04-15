@@ -18,7 +18,7 @@
 
 .container {
     @include container;
-    &__header{
-        @include container__header;
-    }
+        &__header{
+            @include container__header;
+        }
 }

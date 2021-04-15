@@ -141,10 +141,9 @@ a {
 }
 
 .new {
-  position: relative;
-  z-index: 1;
-  top: 2.5rem;
-  left: 70%;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
   background: #99E2D0;
   color: #008766;
   padding: 0.5rem;
@@ -155,6 +154,9 @@ a {
   margin-bottom: 1.5rem;
   box-shadow: 0.1rem 0.1rem 1rem silver;
   border-radius: 1rem;
+}
+.card--new {
+  position: relative;
 }
 .card__picture {
   object-fit: cover;

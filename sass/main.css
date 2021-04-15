@@ -75,7 +75,7 @@ a {
 }
 
 .container__header {
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding-bottom: 2rem;
 }
 
@@ -165,15 +165,14 @@ a {
 }
 
 .container__header {
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding-bottom: 2rem;
 }
 
 .new {
-  position: relative;
-  z-index: 1;
-  top: 2.5rem;
-  left: 70%;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
   background: #99E2D0;
   color: #008766;
   padding: 0.5rem;
@@ -185,6 +184,10 @@ a {
   -webkit-box-shadow: 0.1rem 0.1rem 1rem silver;
           box-shadow: 0.1rem 0.1rem 1rem silver;
   border-radius: 1rem;
+}
+
+.card--new {
+  position: relative;
 }
 
 .card__picture {
