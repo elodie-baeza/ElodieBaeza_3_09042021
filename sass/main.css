@@ -249,7 +249,7 @@ footer .list-items__item {
   padding-bottom: 0.7rem;
 }
 
-footer .list-items__item__icon {
+footer .list-items__item i {
   width: 2rem;
   color: white;
 }
