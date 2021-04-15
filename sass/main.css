@@ -69,10 +69,6 @@ header .header__location i {
   padding-right: 1.5rem;
 }
 
-.guide--grey {
-  background: #f6f6f6;
-}
-
 .guide ol {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,10 +135,6 @@ header .header__location i {
   background: #f6f6f6;
 }
 
-.brief-outline--grey {
-  background: #f6f6f6;
-}
-
 .brief-outline h2 {
   font-size: 1.8rem;
   padding: 0 1rem 0 1rem;
@@ -153,23 +145,33 @@ header .header__location i {
   padding: 1rem 0rem 2rem 0rem;
 }
 
-.guide, .book {
+.guide {
   padding-top: 3rem;
   padding-bottom: 5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-.guide--grey, .book--grey {
+.guide__title {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.book {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   background: #f6f6f6;
 }
 
-.guide__title, .book__title {
+.book__title {
   font-size: 1.5rem;
   padding-bottom: 2rem;
 }
 
 .card {
+  position: relative;
   margin-bottom: 1.5rem;
   -webkit-box-shadow: 0.1rem 0.1rem 1rem silver;
           box-shadow: 0.1rem 0.1rem 1rem silver;

@@ -6,7 +6,10 @@
 // }                
 
 .card{
-    @include card;
+    position: relative;
+    margin-bottom: 1.5rem;
+    box-shadow: 0.1rem 0.1rem 1rem lighten(grey, 25%);
+    border-radius: 1rem;
         &__tag{
             position: absolute;
             right: 1rem;
@@ -16,10 +19,6 @@
             padding: 0.5rem;
             border-radius: 0.2rem;
         }
-        // &--new{
-        //     @include card;
-        //     position: relative;
-        // }
         &__picture{
             object-fit: cover;
             width: 100%;

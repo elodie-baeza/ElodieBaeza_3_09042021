@@ -13,8 +13,16 @@
         }
 }
 
-.guide, .book {
+.guide{
     @include container;
+        &__title{
+            @include container__title;
+        }
+}
+
+.book{
+    @include container;
+    background: #f6f6f6;
         &__title{
             @include container__title;
         }
