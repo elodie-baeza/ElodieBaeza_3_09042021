@@ -16,3 +16,52 @@
             color: $colour-primary;
         }
 }
+
+@mixin card($pictureBorderRadius: 1rem, $figcaptionBorderRadius: 0 0 1rem 1rem, $fontSize: 1.2rem){
+    position: relative;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+        &__tag{
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            background: $colour-tertiary;
+            color: $colour-tertiary-dark;
+            padding: 0.5rem;
+            border-radius: 0.2rem;
+        }
+        &__picture{
+            object-fit: cover;
+            width: 100%;
+            height: 15rem;
+            border-radius: $pictureBorderRadius;
+        }
+        figcaption{
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            justify-content: space-between;
+            align-content: center;
+            background: white;
+            padding: 1rem 0 1rem 1rem;
+            border-radius: $figcaptionBorderRadius;
+        }
+        &__title{
+            width: 100%;
+            font-size: $fontSize;
+            color: black;
+            text-align: left;        
+        }
+        &__city{
+            padding-top: 0.2rem;
+        }
+        .fa::before {
+            font-size: 2rem;
+            background: white;
+            color: black;
+        }                
+        &__icon{
+            padding-right: 1rem;
+        }
+}

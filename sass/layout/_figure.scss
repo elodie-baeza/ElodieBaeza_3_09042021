@@ -6,48 +6,10 @@
 // }                
 
 .card{
-    position: relative;
-    margin-bottom: 1.5rem;
+    @include card;
     box-shadow: 0.1rem 0.1rem 1rem lighten(grey, 25%);
-    border-radius: 1rem;
-        &__tag{
-            position: absolute;
-            right: 1rem;
-            top: 1rem;
-            background: $colour-tertiary;
-            color: $colour-tertiary-dark;
-            padding: 0.5rem;
-            border-radius: 0.2rem;
-        }
-        &__picture{
-            object-fit: cover;
-            width: 100%;
-            height: 10rem;
-            border-radius: 1rem 1rem 0 0;
-        }
-        figcaption{
-            display: flex;
-            justify-content: space-between;
-            align-content: center;
-            background: white;
-            padding: 0.5rem 0 1rem 1rem;
-            border-radius: 0 0 1rem 1rem;
-                .card__title{
-                    width: 100%;
-                    font-size: 1.2rem;
-                    color: black;
-                }
-                .card__city{
-                    padding-top: 0.2rem;
-                }
-                .fa::before {
-                    font-size: 2rem;
-                    background: white;
-                    color: black;
-                }                
-                .card__icon{
-                    padding-right: 1rem;
-                }
+}
 
-        }
+.header-card{
+    @include card (0, 2rem 2rem 0 0, 1.5rem);
 }

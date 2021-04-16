@@ -4,9 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d7116bec28.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>ohmyfood! La carte</title>
 </head>
 <body>
-    
+    <header>
+        <div>
+            <a href="index.html" class="header__link"><i class="fas fa-arrow-left fa-2x" aria-hidden="true"></i></a>
+            <p class="header__brand-name">ohmyfood</p>
+        </div>
+        <figure class="header-card">
+            <img class="header-card__picture" src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+            <figcaption>
+                <p class="header-card__title">La palette du goût</p>
+                <div class="header-card__bookmark">
+                    <i class="far fa-heart fa-2x header-card__bookmark" aria-hidden="true"></i>
+                    <i class="fas fa-heart fa-2x header-card__bookmark--active" aria-hidden="true"></i>
+                </div>
+            </figcaption>
+        </figure>
+    </header>
+    <main>
+        <section class="menu">
+            <p class="menu__part">ENTREES</p>
+            <ul>
+                <li class="dish">
+                    <p class="dish__title"><strong>Fricassée d'escargot</strong><br>Au piment d'espelette</p>
+                    <strong class="dish__price">25€</strong>
+                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                </li>
+                <li class="dish">
+                    <p class="dish__title"><strong>Foie gras de canard mi-cuit</strong><br>Et ses copeaux de truffe noire</p>
+                    <strong class="dish__price">35€</strong>
+                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                </li>
+                <li class="dish">
+                    <p class="dish__title"><strong>Oeuf au plat</strong><br>Assaisonnée à la truffe sur lit de mâche</p>
+                    <strong class="dish__price">20€</strong>
+                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                </li>
+            </ul>
+            <p class="menu__part">PLATS</p>
+            <ul>
+                <li class="dish">
+                    <p class="dish__title"><strong>Filet de boeuf aux herbes</strong><br>Accompagnée de sa ribambelle de légumes</p>
+                    <strong class="dish__price">40€</strong>
+                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                </li>
+                <li class="dish">
+                    <p class="dish__title"><strong>Parmentier de queue de boeuf</strong><br>A la truffe noire sur sa purée de panais</p>
+                    <strong class="dish__price">35€</strong>
+                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                </li>
+                <li class="dish">
+                    <p class="dish__title"><strong>Filet de Turbot</strong><br>Aux agrumes</p>
+                    <strong class="dish__price">44€</strong>
+                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                </li>
+            </ul>
+            <p class="menu__part">DESSERTS</p>
+            <ul>
+                <li class="dish">
+                    <p class="dish__title"><strong>Paris-Brest</strong><br>Revisité</p>
+                    <strong class="dish__price">18€</strong>
+                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                </li>
+                <li class="dish">
+                    <p class="dish__title"><strong>Macaron au chocolat d'exception</strong><br>Et glace à la vanille de Madagascar</p>
+                    <strong class="dish__price">22€</strong>
+                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                </li>
+                <li class="dish">
+                    <p class="dish__title"><strong>Mousse au chocolat</strong><br>Au piment d'espelette et à la truffe noire</p>
+                    <strong class="dish__price">23€</strong>
+                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                </li>
+            </ul>
+            <a href="#" class="btn">Commander</a>
+        </section>
+    </main>
+    <footer>
+        <p class="footer__title">ohmyfood</p>
+            <ul class="list-items">
+                <li class="list-items__item">
+                    <i class="fas fa-utensils" aria-hidden="true"></i>
+                    <a href="#"> Proposer un restaurant </a>
+                </li>
+                <li class="list-items__item">
+                    <i class="far fa-handshake" aria-hidden="true"></i>
+                    <a href="#"> Devenir partenaire </a>
+                </li>
+                <li class="list-items__item">
+                    <a href="#"> Mentions légales </a>
+                </li>
+                <li class="list-items__item">
+                    <a href="mailto:ohmyfood@example.com"> Contact </a>
+                </li>
+            </ul>
+    </footer>
 </body>
 </html>
