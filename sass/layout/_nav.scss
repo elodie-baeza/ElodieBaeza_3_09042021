@@ -33,7 +33,10 @@
             padding-right: 1.8rem;
             font-size: 1.25rem;
         }
-        &:hover{
-            @include step--active;
+        &--active:hover{
+            background: $colour-primary-light;
+            i {
+                color: $colour-primary;
+            }
         }
 }

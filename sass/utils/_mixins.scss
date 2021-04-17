@@ -10,14 +10,7 @@
     padding-right: 1.5rem;
 }
 
-@mixin step--active{
-    background: $colour-primary-light;
-        i {
-            color: $colour-primary;
-        }
-}
-
-@mixin card($pictureBorderRadius: 1rem, $figcaptionBorderRadius: 0 0 1rem 1rem, $fontSize: 1.2rem){
+@mixin card($pictureBorderRadius: 1rem, $figcaptionBorderRadius: 1rem, $fontSize: 1rem){
     position: relative;
     margin-bottom: 1.5rem;
     border-radius: 1rem;
