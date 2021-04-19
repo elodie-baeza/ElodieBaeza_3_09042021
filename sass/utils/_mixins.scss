@@ -37,7 +37,7 @@
             justify-content: space-between;
             align-content: center;
             background: white;
-            padding: 1rem 0 1rem 1rem;
+            padding: 1rem;
             border-radius: $figcaptionBorderRadius;
         }
         &__title{
@@ -49,11 +49,11 @@
         &__city{
             padding-top: 0.2rem;
         }
-        .fa::before {
-            font-size: 2rem;
-            background: white;
-            color: black;
-        }                
+        // .fa::before {
+        //     font-size: 2rem;
+        //     background: white;
+        //     color: black;
+        // }                
         &__icon{
             padding-right: 1rem;
         }

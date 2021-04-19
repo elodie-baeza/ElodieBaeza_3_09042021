@@ -1,11 +1,23 @@
-// .fa::active {
-//     font-size: 2rem;
-//     background: linear-gradient(45deg, $colour-secondary, $colour-primary);
-//     -webkit-background-clip: text;
-//     -webkit-text-fill-color: transparent;
-// }                
-
 .card{
     @include card(1rem, 0 0 1rem 1rem, 1.2rem);
     box-shadow: 0.1rem 0.1rem 1rem lighten(grey, 25%);
+        .fas{
+            display: none;
+        }
+        &__bookmark{
+            background-color: white;
+            border-style: none;
+                &:focus{
+                    .far{
+                        display: none;
+                    }
+                    .fas{
+                        display: block;
+                        // font-size: 2rem;
+                        background: linear-gradient(45deg, $colour-secondary, $colour-primary);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+        }
 }

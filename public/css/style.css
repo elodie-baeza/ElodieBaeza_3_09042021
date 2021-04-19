@@ -186,7 +186,7 @@ header div {
   justify-content: space-between;
   align-content: center;
   background: white;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem;
   border-radius: 0 0 1rem 1rem;
 }
 .card__title {
@@ -198,13 +198,24 @@ header div {
 .card__city {
   padding-top: 0.2rem;
 }
-.card .fa::before {
-  font-size: 2rem;
-  background: white;
-  color: black;
-}
 .card__icon {
   padding-right: 1rem;
+}
+.card .fas {
+  display: none;
+}
+.card__bookmark {
+  background-color: white;
+  border-style: none;
+}
+.card__bookmark:focus .far {
+  display: none;
+}
+.card__bookmark:focus .fas {
+  display: block;
+  background: linear-gradient(45deg, #FF79DA, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
@@ -266,7 +277,7 @@ footer a {
   justify-content: space-between;
   align-content: center;
   background: white;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem;
   border-radius: 2rem 2rem 0 0;
 }
 .header-card__title {
@@ -277,11 +288,6 @@ footer a {
 }
 .header-card__city {
   padding-top: 0.2rem;
-}
-.header-card .fa::before {
-  font-size: 2rem;
-  background: white;
-  color: black;
 }
 .header-card__icon {
   padding-right: 1rem;
@@ -313,13 +319,13 @@ footer a {
   box-shadow: 0.1rem 0.1rem 1rem silver;
   display: flex;
   padding-left: 0.5rem;
-  height: 10vh;
   align-items: center;
 }
 .dish__title {
+  white-space: nowrap;
   flex-grow: 2;
   display: flex;
-  width: 100%;
+  width: 80%;
   height: 100%;
   flex-direction: column;
   justify-content: flex-end;
@@ -332,15 +338,20 @@ footer a {
   padding: 0 1rem;
   align-self: flex-end;
   padding-bottom: 0.5rem;
+  background: #ffffff;
+  border-radius: 0 1rem 1rem 0;
 }
 .dish__icon {
   display: none;
 }
-.dish--check:hover .dish__icon {
+.dish:active .dish--check .dish__title {
+  width: 60%;
+}
+.dish:active .dish--check .dish__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 4rem;
   width: 20vw;
   color: #ffffff;
   background: #99E2D0;
