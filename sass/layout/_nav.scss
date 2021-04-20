@@ -1,42 +1,6 @@
 .guide{
     @include container;
-    ol{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
     &__title{
         @include container__title;
     }
-}
-
-.step{
-    display: flex;
-    align-items: center;
-    width: 95%;
-    padding: 1.5rem;
-    background: $colour-light-grey;
-    margin-bottom: 2rem;
-    font-size: 1rem;
-    border-radius: 2rem;
-    box-shadow: 2px 5px 10px lighten(grey, 20%);
-        &__nbr{
-            color: white;
-            background: $colour-primary;
-            padding: 0.4rem 0.8rem 0.4rem 0.8rem;
-            border-radius: 2rem;
-            position: relative;
-            right: 3rem;
-        }
-        &__icon{
-            color: grey;
-            padding-right: 1.8rem;
-            font-size: 1.25rem;
-        }
-        &--active:hover{
-            background: $colour-primary-light;
-            i {
-                color: $colour-primary;
-            }
-        }
 }

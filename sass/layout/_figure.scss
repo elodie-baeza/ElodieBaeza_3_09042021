@@ -1,23 +1,41 @@
 .card{
-    @include card(1rem, 0 0 1rem 1rem, 1.2rem);
     box-shadow: 0.1rem 0.1rem 1rem lighten(grey, 25%);
-        .fas{
-            display: none;
+    position: relative;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+        &__tag{
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            background: $colour-tertiary;
+            color: $colour-tertiary-dark;
+            padding: 0.5rem;
+            border-radius: 0.2rem;
         }
-        &__bookmark{
-            background-color: white;
-            border-style: none;
-                &:focus{
-                    .far{
-                        display: none;
-                    }
-                    .fas{
-                        display: block;
-                        // font-size: 2rem;
-                        background: linear-gradient(45deg, $colour-secondary, $colour-primary);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-                }
+        &__picture{
+            object-fit: cover;
+            width: 100%;
+            height: 10rem;
+            border-radius: 1rem 1rem 0 0;
+        }
+        figcaption{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-content: center;
+            background: white;
+            padding: 1rem;
+            border-radius: 0 0 1rem 1rem;
+        }
+        &__title{
+            width: 100%;
+            color: black;
+            text-align: left;        
+        }
+        &__city{
+            padding-top: 0.2rem;
+        }
+        &__icon{
+            padding-right: 1rem;
         }
 }

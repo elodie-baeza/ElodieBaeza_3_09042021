@@ -2,12 +2,33 @@
     font-size: 1.0rem;
     padding: 1rem 1.5rem 1rem 1.5rem;
     border: none;
+    outline-style: none;
     border-radius: 3rem;
     color: $colour-white;
-    background: linear-gradient($colour-secondary, $colour-primary);
+    background: $colour-degrade;
         &--long{
             padding-left: 3rem;
             padding-right: 3rem;
-            margin: 2rem 0 4rem 0;
+            margin: 2rem 0 3rem 0;
+        }
+}
+
+.bookmark{
+    background-color: white;
+    border-style: none;
+    outline-style: none;
+        .fas{
+            display: none;
+        }
+        &--degrade:active{
+            .far{
+                display: none;
+            }
+            .fas{
+                display: block;
+                background: $colour-degrade;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
 }

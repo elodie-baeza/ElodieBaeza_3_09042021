@@ -4,69 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/d7116bec28.js" crossorigin="anonymous"></script>
+    <!-- Roboto font link -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./public/css/style.css">
+    <!-- font Awesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <!-- style sheet link -->
+    <link href="./public/css/style.css" rel="stylesheet">
     <title>Ohmyfood!</title>
 </head>
 <body>
-    <header>
-        <p class="header__brand-name">ohmyfood</p>
-        <div class="header__location">
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <strong>Paris, Belleville</strong>
-        </div>
+    <!-- top page with logo -->
+    <header class="header">
+        <h1 class="header__logo">ohmyfood</h1>
     </header>
-    
-    <section class="brief-outline">
-        <h2><strong>Réservez le menu qui vous convient</strong></h2>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button class="btn"> Explorer nos restaurants </button>
-    </section>
-    
+
     <main>
-        <nav class="guide">
+        <!-- city selection -->
+        <section class="location">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <h4 class="location__city">Paris, Belleville</h4>
+        </section>
+
+        <!-- Concept presentation -->
+        <section class="brief-outline">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <button class="btn"> Explorer nos restaurants </button>
+        </section>
+
+        <!-- fonctionnement -->
+        <section class="guide">
             <h1 class="guide__title">Fonctionnement</h1>
-            <ol>
-                <li class="step  step--active">
-                    <p class="step__nbr">1</p>
-                    <i class="fa fa-mobile step__icon" aria-hidden="true"></i>
-                    <strong class="step__description"> Choisissez un restaurant </strong>
+            <!-- étapes 1 / 2 / 3 -->
+            <ol class="steps">
+                <li class="steps__item">
+                    <p>1</p>
+                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                    <h4>Choisissez un restaurant</h4>
                 </li>
-                <li class="step  step--active">
-                    <p class="step__nbr">2</p>
-                    <i class="fa fa-list-ul step__icon" aria-hidden="true"></i>
-                    <strong class="step__description"> Composez votre menu </strong>
+                <li class="steps__item">
+                    <p>2</p>
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    <h4>Composez votre menu</h4>
                 </li>
-                <li class="step step--active">
-                    <p class="step__nbr">3</p>
-                    <i class="fa fa-store step__icon" aria-hidden="true"></i>
-                    <strong class="step__description"> Dégustez au restaurant </strong>
+                <li class="steps__item">
+                    <p>3</p>
+                    <i class="fas fa-store" aria-hidden="true"></i>
+                    <h4> Dégustez au restaurant</h4>
                 </li>
             </ol>
-        </nav>
-        
-        <section class="book">
-            <h2 class="book__title"> Restaurants </h2>
+        </section>
 
-            <figure class="card card--bookmark">
+        <!-- liste des restaurants -->
+        <section class="cards-list">
+            <h1 class="cards-list__title"> Restaurants </h1>
+
+            <!-- resto 1-->
+            <figure class="card">
                 <a href="menu.html">
                     <span class="card__tag"><strong>Nouveau</strong></span>
                     <img class="card__picture" src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
                 </a>
                 <figcaption>
                     <div>
-                        <strong class="card__title">La palette du goût</strong>
+                        <h4 class="card__title">La palette du goût</h4>
                         <p class="card__city">Ménilmontant</p>
                     </div>
-                    <button class="card__bookmark">
+                    <button class="bookmark bookmark--degrade">
                         <i class="far fa-heart fa-2x" aria-hidden="true"></i>
                         <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
                     </button>
                 </figcaption>
             </figure>
 
+            <!-- resto 2-->
             <figure class="card">
                 <a href="#">
                     <span class="card__tag"><strong>Nouveau</strong></span>
@@ -74,42 +86,44 @@
                 </a>
                 <figcaption>
                     <div>
-                        <strong class="card__title">La note enchantée</strong>
+                        <h4 class="card__title">La note enchantée</h4>
                         <p class="card__city">Charonne</p>
                     </div>
-                    <button class="card__bookmark">
+                    <button class="bookmark bookmark--degrade">
                         <i class="far fa-heart fa-2x" aria-hidden="true"></i>
                         <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
                     </button>
                 </figcaption>
             </figure>
-            
+
+            <!-- resto 3-->
             <figure class="card">
                 <a href="#">
                     <img class="card__picture" src="./public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
                 </a>
                 <figcaption>
                     <div>
-                        <strong class="card__title">A la française</strong>
+                        <h4 class="card__title">A la française</h4>
                         <p class="card__city">Cité rouge</p>
                     </div>
-                    <button class="card__bookmark">
+                    <button class="bookmark bookmark--degrade">
                         <i class="far fa-heart fa-2x" aria-hidden="true"></i>
                         <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
                     </button>
                 </figcaption>
             </figure>
-            
+
+            <!-- resto 4-->
             <figure class="card">
                 <a href="#">
                     <img class="card__picture" src="./public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
                 </a>
-                <figcaption class=card-tags>
+                <figcaption>
                     <div>
-                        <strong class="card-tags__title">Le délice des sens</strong>
-                        <p class="card-tags__city">Folie-Méricourt</p>
+                        <h4 class="card__title">Le délice des sens</h4>
+                        <p class="card__city">Folie-Méricourt</p>
                     </div>
-                    <button class="card__bookmark">
+                    <button class="bookmark bookmark--degrade">
                         <i class="far fa-heart fa-2x" aria-hidden="true"></i>
                         <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
                     </button>
@@ -118,22 +132,24 @@
         </section>
     </main>
             
-    <footer>
-        <p class="footer__title">ohmyfood</p>
-            <ul class="list-items">
-                <li class="list-items__item">
+    <footer class="footer">
+        <h3 class="footer__logo">ohmyfood</h3>
+            <ul class="footer__list">
+                <li>
+                    <a href="#">
                     <i class="fas fa-utensils" aria-hidden="true"></i>
-                    <a href="#"> Proposer un restaurant </a>
+                    Proposer un restaurant</a>
                 </li>
-                <li class="list-items__item">
+                <li>
+                    <a href="#">
                     <i class="far fa-handshake" aria-hidden="true"></i>
-                    <a href="#"> Devenir partenaire </a>
+                    Devenir partenaire</a>
                 </li>
-                <li class="list-items__item">
-                    <a href="#"> Mentions légales </a>
+                <li>
+                    <a href="#">Mentions légales</a>
                 </li>
-                <li class="list-items__item">
-                    <a href="mailto:ohmyfood@example.com"> Contact </a>
+                <li>
+                    <a href="mailto:ohmyfood@example.com">Contact</a>
                 </li>
             </ul>
     </footer>

@@ -1,23 +1,23 @@
-footer{
+.footer{
     padding-top: 1rem;
     padding-bottom: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     background: #353535;
-        .footer__title{
-            font-size: 1.3rem;
+        &__logo{
             padding-bottom: 1rem;
             color: white;
         }
-        .list-items__item{
-            font-size: 1.1rem;
-            padding-bottom: 0.7rem;
-                i{
-                    width: 2rem;
-                    color: white;
-                }
-        }
         a{
             color: white;
+        }
+        &__list{
+            li{
+                padding-bottom: 0.7rem;
+                    i{
+                        width: 2rem;
+                        color: white;
+                    }
+            }
         }
 }

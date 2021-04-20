@@ -8,3 +8,5 @@ $colour-tertiary: #99E2D0;
 $colour-tertiary-dark: #008766;
 $colour-white: #ffffff;
 $colour-light-grey: #f6f6f6;
+
+$colour-degrade: linear-gradient(45deg, $colour-secondary, $colour-primary);
