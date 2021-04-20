@@ -15,21 +15,20 @@
 </head>
 <body>
     <!-- top page with logo and acceuil.html icon link -->
-    <header class="header">
-        <a href="index.html" class="header__link"><i class="fas fa-arrow-left fa-2x" aria-hidden="true"></i></a>
-        <h1 class="header__logo">ohmyfood</h1>
+    <header class="logo-link">
+        <a href="index.html" class="logo-link__link"><i class="fas fa-arrow-left fa-2x" aria-hidden="true"></i></a>
+        <h1 class="logo-link__logo">ohmyfood</h1>
     </header>
 
     <main>
         <!-- top picture restaurant -->
-        <section>
-            <img class="picture" src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-        </section>
+        <img class="picture" src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+
         <!-- restaurant name + menu + bookmark -->
         <article class="menu">
             <!-- restaurant name + bookmark -->
             <header>
-                <h1 class="menu__title">La palette du goût</h1>
+                <h2 class="menu__title">La palette du goût</h2>
                 <button class="bookmark bookmark--degrade">
                     <i class="far fa-heart fa-2x" aria-hidden="true"></i>
                     <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
@@ -44,7 +43,7 @@
                         <p>Au piment d'espelette</p>
                     </div>
                     <p class="dish__price"><strong>25€</strong></p>
-                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
                 </li>
                 <li class="dish dish--check">
                     <div class="dish__title">
@@ -52,7 +51,7 @@
                         <p>Et ses copeaux de truffe noire</p>
                     </div>
                     <p class="dish__price"><strong>35€</strong></p>
-                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
                 </li>
                 <li class="dish dish--check">
                     <div class="dish__title">
@@ -60,7 +59,7 @@
                         <p>Assaisonnée à la truffe sur lit de mâche</p>
                     </div>
                     <p class="dish__price"><strong>20€</strong></p>
-                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
                 </li>
             </ul>
             <!-- PLATS -->
@@ -72,7 +71,7 @@
                         <p>Accompagnée de sa ribambelle de légumes</p>
                     </div>
                     <p class="dish__price"><strong>40€</strong></p>
-                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
                 </li>
                 <li class="dish dish--check">
                     <div class="dish__title">
@@ -80,7 +79,7 @@
                         <p>A la truffe noire sur sa purée de panais</p>
                     </div>
                     <p class="dish__price"><strong>35€</strong></p>
-                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
                 </li>
                 <li class="dish dish--check">
                     <div class="dish__title">
@@ -88,7 +87,7 @@
                         <p>Aux agrumes</p>
                     </div>
                     <p class="dish__price"><strong>44€</strong></p>
-                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
                 </li>
             </ul>
             <!-- DESSERTS -->
@@ -100,7 +99,7 @@
                         <p>Revisité</p>
                     </div>
                     <p class="dish__price"><strong>18€</strong></p>
-                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
                 </li>
                 <li class="dish dish--check">
                     <div class="dish__title">
@@ -108,7 +107,7 @@
                         <p>Et glace à la vanille de Madagascar</p>
                     </div>
                     <p class="dish__price"><strong>22€</strong></p>
-                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
                 </li>
                 <li class="dish dish--check">
                     <div class="dish__title">
@@ -116,7 +115,7 @@
                         <p>Au piment d'espelette et à la truffe noire</p>
                     </div>
                     <p class="dish__price"><strong>23€</strong></p>
-                    <i class="fas fa-check-circle dish__icon" aria-hidden="true"></i>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
                 </li>
             </ul>
             <!-- Bouton COMMANDER -->
@@ -125,9 +124,10 @@
             </nav>
         </article>
     </main>
+
     <footer class="footer">
-        <p class="footer__logo">ohmyfood</p>
-            <ul class="footer_list">
+        <h3 class="footer__logo">ohmyfood</h3>
+            <ul class="footer__list">
                 <li>
                     <a href="#">
                     <i class="fas fa-utensils" aria-hidden="true"></i>

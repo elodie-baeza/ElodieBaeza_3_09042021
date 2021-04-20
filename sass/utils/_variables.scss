@@ -1,8 +1,10 @@
 $colour-primary: #9356dc;
 $colour-primary-hue: hue($colour-primary);
 $colour-primary-light: hsl($colour-primary-hue, $saturation: 100%, $lightness: 96%);
+$colour-primary-lighten: lighten($colour-primary, 5%);
 
 $colour-secondary: #FF79DA;
+$colour-secondary-lighten: lighten($colour-secondary, 5%);
 
 $colour-tertiary: #99E2D0;
 $colour-tertiary-dark: #008766;
@@ -10,3 +12,4 @@ $colour-white: #ffffff;
 $colour-light-grey: #f6f6f6;
 
 $colour-degrade: linear-gradient(45deg, $colour-secondary, $colour-primary);
+$colour-degrade-light: linear-gradient(45deg, $colour-secondary-lighten, $colour-primary-lighten);

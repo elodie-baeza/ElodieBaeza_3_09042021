@@ -16,13 +16,16 @@
         }
         &__title{
             flex-grow: 1;
+            font-size: 1.75em;
         }
         &__part{
             padding-top: 2rem;
             padding-bottom: 3px;
             margin-bottom: 1rem;
+            // titre souligné couleur menthe sur 12% (100-88%) de la largeur
             border-bottom: 3px solid $colour-tertiary;
             margin-right: 88%;
+            // ******************************
         }
         nav{
             text-align: center;
@@ -35,49 +38,53 @@
     border-radius: 1rem;
     box-shadow: 0.1rem 0.1rem 1rem lighten(grey, 25%);
     display: flex;
-    padding-left: 0.5rem;
+    justify-content: space-between;
         &__title{
-            width: 80%;
-            flex: auto;
-            display: flex;
-            flex-direction: column;
             padding: 1rem 0;
+            padding-left: 0.5rem;
+            width: 82%;
             p {
                 // nécessaire pour text-overflow
-                width: 100%;
                 white-space: nowrap;
                 overflow: hidden;
+                // ************************
                 text-overflow: ellipsis;
-                    strong{
-                        font-size: 1.1rem;
+                    // description du plat
+                    &:first-child{
+                        padding-bottom: 0.2rem;
+                        font-size: 1.2rem;
                     }
+                    // 2ème ligne du plat
                     &:nth-child(2){
                         font-size: 0.9rem;
                     }
             }
-            p:nth-child(1){
-                padding-bottom: 0.2rem;
-            }
-        }
+        }        
         &__price{
-            padding: 0 1rem;
+            // margin: 0 1rem;
             align-self: flex-end;
-            padding-bottom: 1rem;
+            padding: 1rem;
             background: $colour-white;
-            border-radius: 0 1rem 1rem 0;
+            border-radius: 0 0 1rem 0;
         }
+        // bouton de check caché
         &__icon{
             display: none;
         }
+
+        // bouton de check actif au clic
         &--check:active{
             .dish__title{
-                width: 60%;
+                width: 65%;
             }
             .dish__icon{
+                border-style: none;
+                outline-style: none;            
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 16vw;
+                padding: 0 1rem;
+                // width: 20%;
                 color: $colour-white;
                 background: $colour-tertiary;
                 border-radius: 0 1rem 1rem 0;
