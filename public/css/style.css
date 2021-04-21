@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-header *, .footer__logo {
+header *, .footer__logo, .logo {
   font-family: "shrikhand", cursive;
   font-weight: normal;
 }
@@ -53,23 +53,87 @@ h4 {
 }
 
 .bookmark {
-  background-color: transparent;
+  background: transparent;
   border-style: none;
   outline-style: none;
 }
 .bookmark .fas {
   display: none;
 }
+.bookmark--degrade:active {
+  color: transparent;
+}
 .bookmark--degrade:active .far {
   display: none;
 }
 .bookmark--degrade:active .fas {
+  animation: degrade 1s;
   display: block;
-  background: linear-gradient(45deg, #FF79DA, #9356dc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
+@keyframes degrade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+    background: linear-gradient(45deg, #FF79DA, #9356dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    opacity: 1;
+    background: linear-gradient(45deg, #FF79DA, #9356dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+.loading-spinner {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  animation: 3s hideLdSpinner;
+  animation-timing-function: unset;
+  animation-fill-mode: both;
+}
+.loading-spinner div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 25px solid #fff;
+  border-radius: 50%;
+  border-color: #9356dc transparent transparent transparent;
+  animation: loading-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation-iteration-count: 4;
+}
+.loading-spinner div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.loading-spinner div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.loading-spinner div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes loading-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hideLdSpinner {
+  to {
+    visibility: hidden;
+  }
+}
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

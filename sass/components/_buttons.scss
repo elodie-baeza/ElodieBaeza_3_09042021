@@ -19,21 +19,38 @@
 }
 
 .bookmark{
-    background-color: transparent;
+    background: transparent;
     border-style: none;
     outline-style: none;
         .fas{
             display: none;
         }
         &--degrade:active{
+            color: transparent;
             .far{
                 display: none;
             }
             .fas{
+                animation: degrade 1s;
                 display: block;
-                background: $colour-degrade;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
             }
         }
+}
+
+@keyframes degrade{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+        background: $colour-degrade;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100%{
+        opacity: 1;
+        background: $colour-degrade;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
