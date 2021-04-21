@@ -1,3 +1,24 @@
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hideLdSpinner {
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes dishesProgressiv {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 *,
 *::after,
 *::before {
@@ -108,7 +129,7 @@ h4 {
   border: 25px solid #fff;
   border-radius: 50%;
   border-color: #9356dc transparent transparent transparent;
-  animation: loading-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: loading-spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   animation-iteration-count: 4;
 }
 .loading-spinner div:nth-child(1) {
@@ -121,19 +142,6 @@ h4 {
   animation-delay: -0.15s;
 }
 
-@keyframes loading-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes hideLdSpinner {
-  to {
-    visibility: hidden;
-  }
-}
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -348,6 +356,15 @@ h4 {
 .menu nav {
   text-align: center;
 }
+.menu .dish:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.menu .dish:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.menu .dish:nth-child(3) {
+  animation-delay: 0.6s;
+}
 
 .dish {
   margin: 1rem 0;
@@ -356,6 +373,7 @@ h4 {
   box-shadow: 0.1rem 0.1rem 1rem silver;
   display: flex;
   justify-content: space-between;
+  animation: dishesProgressiv 0.5s linear 1 both;
 }
 .dish__title {
   padding: 1rem 0;
