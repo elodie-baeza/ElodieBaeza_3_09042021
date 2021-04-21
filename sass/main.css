@@ -50,6 +50,54 @@
   }
 }
 
+@-webkit-keyframes check {
+  from {
+    visibility: hidden;
+    width: 0;
+  }
+  to {
+    visibility: visible;
+    width: 20%;
+  }
+}
+
+@keyframes check {
+  from {
+    visibility: hidden;
+    width: 0;
+  }
+  to {
+    visibility: visible;
+    width: 20%;
+  }
+}
+
+@-webkit-keyframes checkRotate {
+  from {
+    visibility: hidden;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  to {
+    visibility: visible;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes checkRotate {
+  from {
+    visibility: hidden;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  to {
+    visibility: visible;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -522,8 +570,6 @@ h4 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-animation: dishesProgressiv 0.5s linear 1 both;
-          animation: dishesProgressiv 0.5s linear 1 both;
 }
 
 .dish__title {
@@ -575,11 +621,17 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 1rem;
   color: #ffffff;
   background: #99E2D0;
   border-radius: 0 1rem 1rem 0;
   text-align: center;
   font-size: 1.5rem;
+  -webkit-animation: check 0.3s linear 1 both;
+          animation: check 0.3s linear 1 both;
+}
+
+.dish--check:active .dish__icon i {
+  -webkit-animation: checkRotate 0.3s linear 1 both;
+          animation: checkRotate 0.3s linear 1 both;
 }
 /*# sourceMappingURL=main.css.map */
