@@ -53,7 +53,7 @@ h4 {
 }
 
 .bookmark {
-  background-color: white;
+  background-color: transparent;
   border-style: none;
   outline-style: none;
 }
@@ -70,26 +70,20 @@ h4 {
   -webkit-text-fill-color: transparent;
 }
 
-.logo {
-  padding: 1rem 0 0.2rem 0;
-  text-align: center;
-  width: 100%;
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-
-.logo-link {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.logo-link__logo {
-  padding: 1rem 0 0.2rem 0;
-  flex-grow: 1.5;
-}
-.logo-link__link {
+.header__link {
   color: black;
   margin-left: 1rem;
-  flex-grow: 1;
   font-size: 0.8rem;
+  grid-column: 1;
+  align-self: center;
+}
+.header__logo {
+  padding: 1rem 0 0.2rem 0;
+  grid-column: 2;
 }
 
 .guide {
