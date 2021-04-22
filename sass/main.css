@@ -50,44 +50,6 @@
   }
 }
 
-@-webkit-keyframes check {
-  to {
-    width: 20%;
-  }
-}
-
-@keyframes check {
-  to {
-    width: 20%;
-  }
-}
-
-@-webkit-keyframes checkRotate {
-  from {
-    visibility: hidden;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  to {
-    visibility: visible;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes checkRotate {
-  from {
-    visibility: hidden;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  to {
-    visibility: visible;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 *,
 *::after,
 *::before {
@@ -599,7 +561,6 @@ h4 {
 }
 
 .dish__icon {
-  width: 0;
   border-style: none;
   outline-style: none;
   color: #ffffff;
@@ -607,15 +568,36 @@ h4 {
   border-radius: 0 1rem 1rem 0;
   text-align: center;
   font-size: 1.5rem;
+  width: 0;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.dish__icon i {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.dish__icon i::before {
+  margin: 1rem;
 }
 
 .dish--check:hover .dish__icon {
-  -webkit-animation: check 0.3s linear 1 both;
-          animation: check 0.3s linear 1 both;
+  width: 20%;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
 
 .dish--check:hover .dish__icon i {
-  -webkit-animation: checkRotate 0.3s linear 1 both;
-          animation: checkRotate 0.3s linear 1 both;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.dish--check:hover .dish__icon i::before {
+  margin: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

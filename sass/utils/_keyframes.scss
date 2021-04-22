@@ -21,20 +21,3 @@
         opacity: 1;
     }
 }
-
-@keyframes check {
-    to{
-        width: 20%;
-    }
-}
-
-@keyframes checkRotate {
-    from{
-        visibility: hidden;
-        transform: rotate(45deg);
-    }
-    to{
-        visibility: visible;
-        transform: rotate(360deg);
-    }
-}

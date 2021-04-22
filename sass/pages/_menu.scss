@@ -80,7 +80,6 @@
         }
         // bouton de check caché
         &__icon{
-            width: 0;
             border-style: none;
             outline-style: none;            
             color: $colour-white;
@@ -88,14 +87,28 @@
             border-radius: 0 1rem 1rem 0;
             text-align: center;
             font-size: 1.5rem;
+            width: 0;
+            transition: width 0.3s;
+            i{
+                transform: rotate(45deg);
+                transition: 0.3s;
+                &::before{
+                    margin: 1rem;
+                }
+            }
     }
 
         // bouton de check actif au clic
         &--check:hover{
             .dish__icon{
-                animation: check 0.3s linear 1 both;
+                width: 20%;
+                transition: width 0.3s;    
                 i{
-                    animation: checkRotate 0.3s linear 1 both;
+                    transform: rotate(360deg);
+                    transition: 0.3s;
+                    &::before{
+                        margin: 1rem;
+                    }
                 }
             }
         }
