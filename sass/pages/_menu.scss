@@ -47,16 +47,18 @@
     border-radius: 1rem;
     box-shadow: 0.1rem 0.1rem 1rem lighten(grey, 25%);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    overflow: hidden;
+    animation: dishesProgressiv 0.5s linear 1 both;
         &__title{
-            padding: 1rem 0;
-            padding-left: 0.5rem;
-            width: 82%;
+            padding: 1rem 0 1rem 0.5rem;
+            flex-grow: 1;
+            overflow: hidden;
             p {
                 // nécessaire pour text-overflow
                 white-space: nowrap;
                 overflow: hidden;
-                // ************************
+                // gjhgfkglk...
                 text-overflow: ellipsis;
                     // description du plat
                     &:first-child{
@@ -78,25 +80,19 @@
         }
         // bouton de check caché
         &__icon{
-            display: none;
-        }
+            width: 0;
+            border-style: none;
+            outline-style: none;            
+            color: $colour-white;
+            background: $colour-tertiary;
+            border-radius: 0 1rem 1rem 0;
+            text-align: center;
+            font-size: 1.5rem;
+    }
 
         // bouton de check actif au clic
-        &--check:active{
-            .dish__title{
-                width: 65%;
-            }
+        &--check:hover{
             .dish__icon{
-                border-style: none;
-                outline-style: none;            
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: $colour-white;
-                background: $colour-tertiary;
-                border-radius: 0 1rem 1rem 0;
-                text-align: center;
-                font-size: 1.5rem;
                 animation: check 0.3s linear 1 both;
                 i{
                     animation: checkRotate 0.3s linear 1 both;

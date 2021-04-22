@@ -23,12 +23,7 @@
 }
 
 @keyframes check {
-    from{
-        visibility: hidden;
-        width: 0;
-    }
     to{
-        visibility: visible;
         width: 20%;
     }
 }
