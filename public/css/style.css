@@ -68,7 +68,7 @@ h4 {
   padding-right: 3rem;
   margin: 2rem 0 3rem 0;
 }
-.btn:hover {
+.btn:active {
   background: linear-gradient(45deg, #ff93e1, #a16be0);
   box-shadow: 3px 6px 10px #676767;
 }
