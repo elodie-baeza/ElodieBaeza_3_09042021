@@ -1,9 +1,9 @@
 @keyframes loading-spinner {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0turn);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(1turn);
   }
 }
 @keyframes hideLdSpinner {
@@ -114,25 +114,15 @@ h4 {
   animation-fill-mode: both;
 }
 .loading-spinner div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  border: 25px solid #fff;
+  content: " ";
+  width: 140px;
+  height: 140px;
+  border: 25px solid silver;
   border-radius: 50%;
-  border-color: #9356dc transparent transparent transparent;
-  animation: loading-spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-top-color: #9356dc;
+  transform: rotate(0.16turn);
+  animation: loading-spinner 1s ease infinite;
   animation-iteration-count: 4;
-}
-.loading-spinner div:nth-child(1) {
-  animation-delay: -0.45s;
-}
-.loading-spinner div:nth-child(2) {
-  animation-delay: -0.3s;
-}
-.loading-spinner div:nth-child(3) {
-  animation-delay: -0.15s;
 }
 
 .header {
