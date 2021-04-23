@@ -11,7 +11,7 @@
     visibility: hidden;
   }
 }
-@keyframes dishesProgressiv {
+@keyframes fadein {
   from {
     opacity: 0;
   }
@@ -78,37 +78,29 @@ h4 {
   border-style: none;
   outline-style: none;
 }
+.bookmark .far {
+  opacity: 1;
+  position: relative;
+  left: 29px;
+}
 .bookmark .fas {
-  display: none;
+  background: linear-gradient(45deg, #FF79DA, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
 }
 .bookmark--degrade:active {
   color: transparent;
 }
 .bookmark--degrade:active .far {
-  display: none;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 .bookmark--degrade:active .fas {
-  animation: degrade 1s;
-  display: block;
+  opacity: 1;
+  transition: opacity 2s ease-out;
 }
 
-@keyframes degrade {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-    background: linear-gradient(45deg, #FF79DA, #9356dc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  100% {
-    opacity: 1;
-    background: linear-gradient(45deg, #FF79DA, #9356dc);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
 .loading-spinner {
   display: flex;
   position: absolute;
@@ -154,6 +146,8 @@ h4 {
   font-size: 0.8rem;
   grid-column: 1;
   align-self: center;
+  display: flex;
+  justify-content: flex-start;
 }
 .header__logo {
   padding: 1rem 0 0.2rem 0;
@@ -376,7 +370,7 @@ h4 {
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
-  animation: dishesProgressiv 0.5s linear 1 both;
+  animation: fadein 0.5s linear 1 both;
 }
 .dish__title {
   padding: 1rem 0 1rem 0.5rem;
@@ -419,15 +413,15 @@ h4 {
 .dish__icon i::before {
   margin: 1rem;
 }
-.dish--check:hover .dish__icon {
+.dish--check:active .dish__icon {
   width: 20%;
   transition: width 0.3s;
 }
-.dish--check:hover .dish__icon i {
+.dish--check:active .dish__icon i {
   transform: rotate(360deg);
   transition: 0.3s;
 }
-.dish--check:hover .dish__icon i::before {
+.dish--check:active .dish__icon i::before {
   margin: 1rem;
 }
 

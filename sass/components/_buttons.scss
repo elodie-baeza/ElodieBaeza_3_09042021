@@ -22,35 +22,28 @@
     background: transparent;
     border-style: none;
     outline-style: none;
+        .far{
+            opacity: 1;
+            // transition: all 1s;
+            position: relative;
+            left: 29px;
+        }
         .fas{
-            display: none;
+            background: $colour-degrade;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            // transition: all 0.5s;
         }
         &--degrade:active{
             color: transparent;
             .far{
-                display: none;
+                opacity: 0;
+                transition: opacity 0.5s;
             }
             .fas{
-                animation: degrade 1s;
-                display: block;
+                opacity: 1;
+                transition: opacity 2s ease-out;
             }
         }
-}
-
-@keyframes degrade{
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 0.5;
-        background: $colour-degrade;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    100%{
-        opacity: 1;
-        background: $colour-degrade;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 }
