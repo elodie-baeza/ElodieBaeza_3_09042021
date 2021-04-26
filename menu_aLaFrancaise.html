@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Roboto font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <!-- font Awesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <!-- style sheet link -->
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>À la française-menu</title>
+</head>
+<body>
+    <!-- top page with logo and acceuil.html icon link -->
+    <header class="header">
+        <a href="index.html" class="header__link"><i class="fas fa-arrow-left fa-2x" aria-hidden="true"></i></a>
+        <h1 class="header__logo">ohmyfood</h1>
+    </header>
+
+    <main>
+        <!-- top picture restaurant -->
+        <img class="picture" src="./public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
+
+        <!-- restaurant name + menu + bookmark -->
+        <article class="menu">
+            <!-- restaurant name + bookmark -->
+            <header>
+                <h2 class="menu__title">À la française</h2>
+                <button class="bookmark bookmark--degrade">
+                    <i class="far fa-heart fa-2x" aria-hidden="true"></i>
+                    <i class="fas fa-heart fa-2x" aria-hidden="true"></i>
+                </button>
+            </header>
+            <!-- ENTREES -->
+            <p class="menu__part">ENTREES</p>
+            <ul>
+                <li class="dish dish--check">
+                    <div class="dish__title">
+                        <p><strong>Tarte de poulpe acidulé</strong></p>
+                        <p>Aux zests d'orange</p>
+                    </div>
+                    <p class="dish__price"><strong>25€</strong></p>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
+                </li>
+                <li class="dish dish--check">
+                    <div class="dish__title">
+                        <p><strong>Velouté de légumes d'antan</strong></p>
+                        <p>Carotte, panais, topinambour</p>
+                    </div>
+                    <p class="dish__price"><strong>35€</strong></p>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
+                </li>
+                <li class="dish dish--check">
+                    <div class="dish__title">
+                        <p><strong>Soupe à l'oignon</strong></p>
+                        <p>Revisitée</p>
+                    </div>
+                    <p class="dish__price"><strong>20€</strong></p>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
+                </li>
+            </ul>
+            <!-- PLATS -->
+            <p class="menu__part">PLATS</p>
+            <ul>
+                <li class="dish dish--check">
+                    <div class="dish__title">
+                        <p><strong>Coquilles Saint-Jacques</strong></p>
+                        <p>Accompagnée d'une purée de panais</p>
+                    </div>
+                    <p class="dish__price"><strong>40€</strong></p>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
+                </li>
+                <li class="dish dish--check">
+                    <div class="dish__title">
+                        <p><strong>Magret de canard</strong></p>
+                        <p>Et parmentier de pommes de terres</p>
+                    </div>
+                    <p class="dish__price"><strong>35€</strong></p>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
+                </li>
+                <li class="dish dish--check">
+                    <div class="dish__title">
+                        <p><strong>Pigeonneau d'ille-et-Vilaine</strong></p>
+                        <p>Sur son lit de gnocchis aux légumes</p>
+                    </div>
+                    <p class="dish__price"><strong>44€</strong></p>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
+                </li>
+            </ul>
+            <!-- DESSERTS -->
+            <p class="menu__part">DESSERTS</p>
+            <ul>
+                <li class="dish dish--check">
+                    <div class="dish__title">
+                        <p><strong>Pétales de violettes glacés</strong></p>
+                        <p>Et purée de noisettes</p>
+                    </div>
+                    <p class="dish__price"><strong>18€</strong></p>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
+                </li>
+                <li class="dish dish--check">
+                    <div class="dish__title">
+                        <p><strong>Fondant au chocolat</strong></p>
+                        <p>Revisité</p>
+                    </div>
+                    <p class="dish__price"><strong>22€</strong></p>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
+                </li>
+                <li class="dish dish--check">
+                    <div class="dish__title">
+                        <p><strong>Millefeuille croustillant</strong></p>
+                        <p>Myrtilles et pâte d'amande</p>
+                    </div>
+                    <p class="dish__price"><strong>23€</strong></p>
+                    <button class="dish__icon"><i class="fas fa-check-circle" aria-hidden="true"></i></button>
+                </li>
+            </ul>
+            <!-- Bouton COMMANDER -->
+            <nav>
+                <button class="btn btn--long">Commander</button>
+            </nav>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <h3 class="footer__logo">ohmyfood</h3>
+            <ul class="footer__list">
+                <li>
+                    <a href="#">
+                    <i class="fas fa-utensils" aria-hidden="true"></i>
+                    Proposer un restaurant</a>
+                </li>
+                <li>
+                    <a href="#">
+                    <i class="far fa-handshake" aria-hidden="true"></i>
+                    Devenir partenaire</a>
+                </li>
+                <li>
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="mailto:ohmyfood@example.com">Contact</a>
+                </li>
+            </ul>
+    </footer>
+</body>
+</html>

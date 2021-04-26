@@ -173,7 +173,7 @@ h4 {
   height: 140px;
   border: 25px solid silver;
   border-radius: 50%;
-  border-top-color: #9356dc;
+  border-top-color: #99E2D0;
   -webkit-transform: rotate(0.16turn);
           transform: rotate(0.16turn);
   -webkit-animation: loading-spinner 1s ease infinite;
@@ -425,6 +425,7 @@ h4 {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  max-height: 70vw;
   margin-bottom: -3rem;
   z-index: -1;
 }
