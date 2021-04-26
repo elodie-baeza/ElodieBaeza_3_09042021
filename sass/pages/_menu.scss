@@ -57,7 +57,6 @@
             overflow: hidden;
             p {
                 // nécessaire pour text-overflow
-                white-space: nowrap;
                 overflow: hidden;
                 // gjhgfkglk...
                 text-overflow: ellipsis;
@@ -101,6 +100,9 @@
 
         // bouton de check actif au clic
         &--check:active{
+            .dish__title p{
+                white-space: nowrap;
+            }
             .dish__icon{
                 width: 20%;
                 transition: width 0.3s;    

@@ -369,7 +369,6 @@ h4 {
   overflow: hidden;
 }
 .dish__title p {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -403,6 +402,9 @@ h4 {
 }
 .dish__icon i::before {
   margin: 1rem;
+}
+.dish--check:active .dish__title p {
+  white-space: nowrap;
 }
 .dish--check:active .dish__icon {
   width: 20%;
