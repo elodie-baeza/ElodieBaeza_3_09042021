@@ -13,6 +13,16 @@
     }
 }
 
+@keyframes hideScrollBar {
+    from{
+        overflow-y: hidden;
+    }
+    to{
+        overflow: visible;
+    }
+}
+
+// MENU: apparition progressive des plats 
 @keyframes fadein {
     from{
         opacity: 0;

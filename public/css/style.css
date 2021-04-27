@@ -11,6 +11,14 @@
     visibility: hidden;
   }
 }
+@keyframes hideScrollBar {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow: visible;
+  }
+}
 @keyframes fadein {
   from {
     opacity: 0;
@@ -28,8 +36,10 @@
 }
 
 body {
+  margin: auto;
   box-sizing: border-box;
   background: #ffffff;
+  animation: hideScrollBar 3s step-end;
 }
 
 ul li {
@@ -38,6 +48,7 @@ ul li {
 
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 header *, .footer__logo, .logo {
@@ -68,7 +79,7 @@ h4 {
   padding-right: 3rem;
   margin: 2rem 0 3rem 0;
 }
-.btn:active {
+.btn:hover {
   background: linear-gradient(45deg, #ff93e1, #a16be0);
   box-shadow: 3px 6px 10px #676767;
 }
@@ -103,23 +114,31 @@ h4 {
 
 .loading-spinner {
   display: flex;
-  position: absolute;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  background: rgba(208, 213, 216, 0.5);
+  background: #a16be0;
   animation: 3s hideLdSpinner;
   animation-timing-function: unset;
   animation-fill-mode: both;
+}
+.loading-spinner h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 .loading-spinner div {
   content: " ";
   width: 140px;
   height: 140px;
-  border: 25px solid silver;
+  border: 20px solid #a16be0;
   border-radius: 50%;
   border-top-color: #99E2D0;
+  border-bottom-color: #99E2D0;
   transform: rotate(0.16turn);
   animation: loading-spinner 1s ease infinite;
   animation-iteration-count: 4;
@@ -163,7 +182,7 @@ h4 {
   background: #eaeaea;
   padding: 1rem 0 1rem 0;
   font-size: 1.1rem;
-  box-shadow: inset 0 2px 10px #afafaf;
+  box-shadow: inset 0 2px 5px #afafaf;
 }
 .location i {
   margin-right: 1rem;
@@ -344,12 +363,15 @@ h4 {
   text-align: center;
 }
 .menu .dish:nth-child(1) {
+  animation-name: fadein;
   animation-delay: 0.2s;
 }
 .menu .dish:nth-child(2) {
+  animation-name: fadein;
   animation-delay: 0.4s;
 }
 .menu .dish:nth-child(3) {
+  animation-name: fadein;
   animation-delay: 0.6s;
 }
 

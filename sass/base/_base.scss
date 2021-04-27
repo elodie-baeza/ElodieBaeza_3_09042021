@@ -7,8 +7,11 @@
 }
 
 body {
+    margin: auto;
     box-sizing: border-box;
     background: $colour-white;
+    // max-width: 1024px;
+    animation: hideScrollBar 3s step-end;
 }
 
 ul li {
@@ -17,4 +20,5 @@ ul li {
 
 a{
     text-decoration: none;
+    color: #ffffff;
 }

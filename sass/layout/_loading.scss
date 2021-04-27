@@ -1,21 +1,29 @@
 .loading-spinner {
     display: flex;
-    position: absolute;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    background: rgba(208, 213, 216, 0.500);
+    background: $colour-primary-lighten;
     animation: 3s hideLdSpinner;
     animation-timing-function: unset;
     animation-fill-mode: both;
+        h2{
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
         div {
             content: " ";
             width: 140px;
             height: 140px;
-            border: 25px solid rgb(192, 192, 192);
+            border: 20px solid $colour-primary-lighten;
             border-radius: 50%;
             border-top-color: $colour-tertiary;
+            border-bottom-color: $colour-tertiary;
             transform: rotate(0.16turn);
             animation: loading-spinner 1s ease infinite;
             animation-iteration-count: 4;
