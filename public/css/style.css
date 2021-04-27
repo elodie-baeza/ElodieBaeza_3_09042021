@@ -90,9 +90,9 @@ h4 {
   outline-style: none;
 }
 .bookmark .far {
-  opacity: 1;
   position: relative;
   left: 29px;
+  opacity: 1;
 }
 .bookmark .fas {
   background: linear-gradient(45deg, #FF79DA, #9356dc);
@@ -100,12 +100,9 @@ h4 {
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
-.bookmark--degrade:active {
-  color: transparent;
-}
 .bookmark--degrade:active .far {
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 2s ease;
 }
 .bookmark--degrade:active .fas {
   opacity: 1;
