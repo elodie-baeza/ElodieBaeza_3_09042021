@@ -202,7 +202,7 @@ h4 {
           animation-fill-mode: both;
 }
 
-.loading-spinner h2 {
+.loading-spinner p {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
