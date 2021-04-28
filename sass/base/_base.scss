@@ -11,6 +11,8 @@
     box-sizing: border-box;
     background: $colour-white;
     max-width: 1024px;
+    // ********** ANIMATION *************
+    // cache scroll bar y pdt loading spinner
         &--loader{
             animation: hideScrollBar 3s step-end;  
         }

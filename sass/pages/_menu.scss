@@ -31,6 +31,7 @@
         nav{
             text-align: center;
         }
+        // ********** ANIMATION *************
         // apparition progressive des plats
         .dish:nth-child(1) {
             animation-name: fadein;
@@ -54,6 +55,8 @@
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
+    // ********** ANIMATION *************
+    // apparition progressive des plats
     animation: fadein 0.5s linear 1 both;
         &__title{
             padding: 1rem 0 1rem 0.5rem;
@@ -82,7 +85,6 @@
             background: $colour-white;
             border-radius: 0 0 1rem 0;
         }
-        // bouton de check caché
         &__icon{
             border-style: none;
             outline-style: none;            
@@ -92,27 +94,29 @@
             text-align: center;
             font-size: 1.5rem;
             width: 0;
-            transition: width 0.3s;
+            // *********** TRANSITION ***************
+            // coche de check cachée
+            transition: width $check-duration;
             i{
                 transform: rotate(45deg);
-                transition: 0.3s;
+                transition: $check-duration;
                 &::before{
                     margin: 1rem;
                 }
             }
     }
-
-        // bouton de check actif au clic
+        // ********** TRANSITION **************
+        // coche de check au clic
         &--check:active{
             p{
                 white-space: nowrap;
             }
             .dish__icon{
                 width: 20%;
-                transition: width 0.3s;    
+                transition: width $check-duration;    
                 i{
                     transform: rotate(360deg);
-                    transition: 0.3s;
+                    transition: $check-duration;
                     &::before{
                         margin: 1rem;
                     }

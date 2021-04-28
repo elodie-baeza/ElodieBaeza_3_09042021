@@ -13,3 +13,8 @@ $colour-light-grey: #f6f6f6;
 
 $colour-degrade: linear-gradient(45deg, $colour-secondary, $colour-primary);
 $colour-degrade-light: linear-gradient(45deg, $colour-secondary-lighten, $colour-primary-lighten);
+
+$loader-page-duration: 3s;
+$loader-circle-speed: 1s;
+$heart-duration: 2s;
+$check-duration: 0.3s;

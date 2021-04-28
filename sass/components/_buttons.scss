@@ -33,14 +33,16 @@
             -webkit-text-fill-color: transparent;
             opacity: 0;
         }
+        //*********** TRANSITION **********
+        // remplissage couleur progressif 
         &--degrade:active{
             .far{
                 opacity: 0;
-                transition: opacity 2s ease;
+                transition: opacity $heart-duration ease;
             }
             .fas{
                 opacity: 1;
-                transition: opacity 2s ease-out;
+                transition: opacity $heart-duration ease-out;
             }
         }
 }
