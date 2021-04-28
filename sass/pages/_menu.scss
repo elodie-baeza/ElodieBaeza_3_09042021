@@ -67,7 +67,7 @@
                     // description du plat
                     &:first-child{
                         padding-bottom: 0.2rem;
-                        font-size: 1.2rem;
+                        font-size: 1.1rem;
                     }
                     // 2ème ligne du plat
                     &:nth-child(2){
@@ -78,7 +78,7 @@
         &__price{
             // margin: 0 1rem;
             align-self: flex-end;
-            padding: 1rem;
+            padding: 1rem 1.5rem;
             background: $colour-white;
             border-radius: 0 0 1rem 0;
         }
@@ -104,7 +104,7 @@
 
         // bouton de check actif au clic
         &--check:active{
-            .dish__title p{
+            p{
                 white-space: nowrap;
             }
             .dish__icon{

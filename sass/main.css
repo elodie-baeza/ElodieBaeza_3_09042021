@@ -545,7 +545,7 @@ h4 {
 
 .dish__title p:first-child {
   padding-bottom: 0.2rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .dish__title p:nth-child(2) {
@@ -555,7 +555,7 @@ h4 {
 .dish__price {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   background: #ffffff;
   border-radius: 0 0 1rem 0;
 }
@@ -584,7 +584,7 @@ h4 {
   margin: 1rem;
 }
 
-.dish--check:active .dish__title p {
+.dish--check:active p {
   white-space: nowrap;
 }
 
