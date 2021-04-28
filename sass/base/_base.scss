@@ -6,12 +6,14 @@
     box-sizing: inherit;
 }
 
-body {
+.page {
     margin: auto;
     box-sizing: border-box;
     background: $colour-white;
-    // max-width: 1024px;
-    animation: hideScrollBar 3s step-end;
+    max-width: 1024px;
+        &--loader{
+            animation: hideScrollBar 3s step-end;  
+        }
 }
 
 ul li {

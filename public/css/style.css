@@ -13,10 +13,14 @@
 }
 @keyframes hideScrollBar {
   from {
+    overflow-x: hidden;
     overflow-y: hidden;
+    max-width: initial;
   }
   to {
+    overflow-x: hidden;
     overflow: visible;
+    max-width: 1024px;
   }
 }
 @keyframes fadein {
@@ -35,10 +39,13 @@
   box-sizing: inherit;
 }
 
-body {
+.page {
   margin: auto;
   box-sizing: border-box;
   background: #ffffff;
+  max-width: 1024px;
+}
+.page--loader {
   animation: hideScrollBar 3s step-end;
 }
 

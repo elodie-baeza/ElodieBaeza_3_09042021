@@ -15,10 +15,14 @@
 
 @keyframes hideScrollBar {
     from{
+        overflow-x: hidden;
         overflow-y: hidden;
+        max-width: initial;
     }
     to{
+        overflow-x: hidden;
         overflow: visible;
+        max-width: 1024px;
     }
 }
 
