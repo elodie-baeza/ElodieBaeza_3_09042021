@@ -14,7 +14,11 @@ $colour-light-grey: #f6f6f6;
 $colour-degrade: linear-gradient(45deg, $colour-secondary, $colour-primary);
 $colour-degrade-light: linear-gradient(45deg, $colour-secondary-lighten, $colour-primary-lighten);
 
+//durée de l'animation du spinner page d'acceuil
 $loader-page-duration: 3s;
+//vitesse de rotation du cercle du spinner
 $loader-circle-speed: 1s;
+//vitesse de remplissage du coeur
 $heart-duration: 2s;
+//durée de l'animation de la coche de check
 $check-duration: 0.3s;

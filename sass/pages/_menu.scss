@@ -63,10 +63,10 @@
             flex-grow: 1;
             overflow: hidden;
             p {
-                // nécessaire pour text-overflow
-                overflow: hidden;
                 // texte trop long...
+                overflow: hidden;
                 text-overflow: ellipsis;
+                // ************************************
                     // description du plat
                     &:first-child{
                         padding-bottom: 0.2rem;
@@ -79,7 +79,6 @@
             }
         }        
         &__price{
-            // margin: 0 1rem;
             align-self: flex-end;
             padding: 1rem 1.5rem;
             background: $colour-white;
@@ -95,7 +94,7 @@
             font-size: 1.5rem;
             width: 0;
             // *********** TRANSITION ***************
-            // coche de check cachée
+            // coche retour fin de clic
             transition: width $check-duration;
             i{
                 transform: rotate(45deg);
@@ -106,7 +105,7 @@
             }
     }
         // ********** TRANSITION **************
-        // coche de check au clic
+        // coche aller au clic
         &--check:active{
             p{
                 white-space: nowrap;
